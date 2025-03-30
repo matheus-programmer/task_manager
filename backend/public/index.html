@@ -1,0 +1,84 @@
+<!-- backend/public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #4a6eb5;
+    }
+    code {
+      background-color: #f5f5f5;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    .endpoint {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-left: 4px solid #4a6eb5;
+    }
+    .method {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .get { color: #4caf50; }
+    .post { color: #2196f3; }
+    .put { color: #ff9800; }
+    .delete { color: #f44336; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager API</h1>
+    <p>Esta é a API do gerenciador de tarefas. Abaixo estão as funções Cloud disponíveis:</p>
+    
+    <div class="endpoint">
+      <span class="method get">GET</span> <code>getTasks</code>
+      <p>Retorna todas as tarefas cadastradas.</p>
+    </div>
+    
+    <div class="endpoint">
+      <span class="method get">GET</span> <code>getTaskById</code>
+      <p>Retorna uma tarefa específica pelo ID.</p>
+      <p>Parâmetros: <code>taskId</code> (string)</p>
+    </div>
+    
+    <div class="endpoint">
+      <span class="method post">POST</span> <code>createTask</code>
+      <p>Cria uma nova tarefa.</p>
+      <p>Parâmetros: <code>title</code> (string), <code>description</code> (string), <code>status</code> (string)</p>
+    </div>
+    
+    <div class="endpoint">
+      <span class="method put">PUT</span> <code>updateTask</code>
+      <p>Atualiza uma tarefa existente.</p>
+      <p>Parâmetros: <code>taskId</code> (string), <code>title</code> (string, opcional), <code>description</code> (string, opcional), <code>status</code> (string, opcional)</p>
+    </div>
+    
+    <div class="endpoint">
+      <span class="method delete">DELETE</span> <code>deleteTask</code>
+      <p>Exclui uma tarefa.</p>
+      <p>Parâmetros: <code>taskId</code> (string)</p>
+    </div>
+    
+    <div class="endpoint">
+      <span class="method get">GET</span> <code>getTasksByStatus</code>
+      <p>Filtra tarefas por status.</p>
+      <p>Parâmetros: <code>status</code> (string)</p>
+    </div>
+    
+    <p>Esta API foi desenvolvida usando o Back4App e Parse Server.</p>
+  </div>
+</body>
+</html>

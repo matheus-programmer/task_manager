@@ -1,0 +1,13 @@
+{
+    "name": "task-manager-backend",
+    "version": "1.0.0",
+    "description": "Backend para o Gerenciador de Tarefas usando Back4App",
+    "main": "index.js",
+    "dependencies": {
+      "parse": "^4.0.1",
+      "parse-server": "^5.2.4"
+    },
+    "scripts": {
+      "start": "node index.js"
+    }
+  }
